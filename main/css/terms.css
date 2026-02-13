@@ -16,4 +16,26 @@ body {
 
 a {
   color: rgb(123, 166, 180);
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  filter: brightness(85%);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: 2px solid rgb(123, 166, 180);
+  border-radius: 8px; /* smooth corners */
+  background-color: transparent;
+  color: rgb(123, 166, 180);
+  font-size: 14px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(123, 166, 180);
+  color: white;
 }
