@@ -53,7 +53,7 @@ body {
   color: lightgray;
   padding: 30px 50px;
   background-color: rgba(0,0,0,0.6);
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid rgba(110, 150, 160, 0.7);
   text-align: center;
 }
@@ -74,14 +74,15 @@ body {
   margin-top: 5px;
   padding: 10px;
   width: 300px;
-  border-radius: 7px;
-  border: 3px solid rgb(150,150,150);
+  border-radius: 8px; /* smooth corners */
+  border: 2px solid rgb(150,150,150);
   outline: none;
   background-color: rgb(240, 240, 240);
+  transition-duration: 0.3s;
 }
 
 #mainContent input[type=text]:focus {
-  border: 3px solid rgb(99, 128, 255);
+  border: 2px solid rgb(99, 128, 255);
 }
 
 #mainContent .submit {
@@ -91,8 +92,8 @@ body {
   outline: none;
   border: none;
   font-size: 15px;
-  padding: 12px 15px;
-  border-radius: 5px;
+  padding: 12px 20px;
+  border-radius: 8px; /* smooth corners */
   cursor: pointer;
 }
 
@@ -229,7 +230,6 @@ h2 {
   }
 }
 
-
 .changePx {
   transition-duration: 0.1s;
   color: rgb(200,200,200);
@@ -248,23 +248,23 @@ h2 {
   margin: auto;
 }
 
-.btn {
+/* Buttons: updated to rectangle with smooth corners and blue style */
+.btn, button {
   transition-duration: 0.2s;
   line-height: 1;
   margin-top: 10px;
   padding: 10px 20px;
-  border-radius: 5px;
-  border: 2px solid rgb(110,140,150);
+  border-radius: 8px; /* smooth corners */
+  border: 2px solid rgb(99, 128, 255);
   background-color: transparent;
-  color: rgb(110,140,150);
+  color: rgb(99, 128, 255);
   font-size: 15px;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: rgb(110,140,150);
-  /*border: 2px solid lightgray;*/
-  color: rgb(230,230,230);
-  cursor: pointer;
+.btn:hover, button:hover {
+  background-color: rgb(99, 128, 255);
+  color: white;
 }
 
 .btn #small {
@@ -301,7 +301,7 @@ h2 {
   background-color: rgb(202, 202, 202);
   color: black;
   box-shadow: 0 0 6px 2px rgba(136, 136, 136);
-  border-radius: 5px;
+  border-radius: 8px; /* smooth corners */
   padding: 20px;
   max-width: 35%;
 }
@@ -329,3 +329,4 @@ h2 {
 .facts {
   display: none;
 }
+
